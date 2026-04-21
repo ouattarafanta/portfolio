@@ -1,0 +1,292 @@
+
+body{
+    background-color: rgb(9, 2, 44);
+    color: white;
+    font-family: sans-serif;
+    opacity: 0.7;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    gap: 20px;
+    padding-top: 80px;
+    justify-content: center;
+    height: 100vh;
+}
+.droit{
+    display: grid;
+    grid-template-rows: 3OOpx;
+    justify-content: center;
+    margin-left: 600px;
+    margin-right: 300px;
+}
+
+.gauche{
+     position: fixed;
+    transform: translate(-500px);
+    width: 250px;
+}
+ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+ul li a{
+    font-size: small;
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    font-weight: bold;
+}.icon{
+    padding-top: 400px;
+}
+i{
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+}
+i:hover{
+    color: aquamarine;
+}
+#experience{
+    padding-top: 50px;
+}
+#experience .ligne{
+    display: grid;
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 40px 110px 50px;
+    padding-top: 70px;
+    height: 200px;
+}
+.ligne{
+    width: 700px;
+    height: 300px;
+    margin-top: 50px;
+}
+.ligne h3 i{
+    font-size: 12px;
+    margin-left: 4px;
+    vertical-align: middle;
+   margin-top: 20px;
+}
+.projet h3 i{
+    font-size: 12px;
+    margin-left: 4px;
+    vertical-align: middle;
+   margin-top: 20px;
+}
+
+.ligne span{
+    width: 120px;
+    padding-top: 20px;
+}
+.ligne h3{
+    width: 250px;
+    padding-left: 100px;
+}
+.ligne p{
+    width: 300px;
+    padding-left: 170px;
+    margin-bottom: 60px;
+}
+.ligne ul{
+    display: flex;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+.ligne ul li{
+    list-style-type: none;
+}
+.ligne ul li a{
+    text-decoration: none;
+    color: aquamarine;
+    padding: 6px 12px;
+    background: rgba(127, 255, 212, 0.1);
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 13px;
+}
+.ligne:hover h3{
+   color: aquamarine;
+}
+.ligne:hover i{
+    color: aquamarine;
+}
+.projet:hover h3{
+   color: aquamarine;
+}
+.projet:hover i{
+    color: aquamarine;
+}
+.ligne:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+    opacity: 0.7;
+}
+.projet{
+    margin-bottom: 50px;
+   width: 700px;
+}
+.projet a img{
+    float: left;
+    width: 150px;
+    padding-right: 20px;
+}
+.projet:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+    opacity: 0.7;
+}
+.projet a  h3{
+   padding-left: 10px;
+}
+.projet a{
+    color: white;
+     text-decoration: none;
+}
+.projet ul{
+    display: flex;
+    margin-left: 120px;
+}
+.projet ul li{
+    list-style-type: none;
+}
+.projet ul li a{
+    text-decoration: none;
+    color: aquamarine;
+     background: rgba(127, 255, 212, 0.1);
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 13px;
+}
+#projects{
+    padding-top: 60px;
+}
+
+
+
+nav ul li a::before{
+    content: "";
+  display: inline-block;
+  width: 35px;
+  height: 1px;
+  background: white;
+  margin-right: 5px;
+}
+nav ul li a:hover::before{
+    width: 70px;
+    font-weight: bold;
+    transition: 0.1s;
+}
+.resume a{
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   text-decoration: none;
+   padding: 15px;
+   border-radius: 10px;
+   width: 600px;
+   color: white;
+}
+.resume a img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.text .date{
+    font-size: 14px;
+}
+.text p{
+    font-size: 16px;
+    margin: 5px 0 0;
+    width: 500px;
+}
+.pied{
+    width: 450px;
+    padding-top: 70px;
+}
+.pied p a{
+    color: white;
+    text-decoration: none;
+}
+.resume a:hover{
+     background-color: rgba(255, 255, 255, 0.05);
+}
+.resume a:hover p{
+    color: aquamarine;
+}
+
+
+@media (max-width: 1354px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .gauche{
+        position: relative;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    nav ul{
+        padding: 0;
+    }
+    #experience{
+        margin-right: 60%;
+        padding-top: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        align-items: center;
+    }
+    .droit{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ligne span{
+        width: 100%;
+        padding-right: 100px;
+    }
+    .icon{
+        padding-top: 20px;
+    }
+    .ligne, .projet{
+        width: 100%;
+    }
+    .ligne h3,
+    .ligne p,
+    .ligne ul {
+        padding-left: 0;
+        text-align: center;
+    }
+    .ligne p, .ligne ul{
+        margin-left: 100%;
+    }
+    .ligne p{
+        text-align: justify;
+    }
+       .projet ul {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .pied {
+        width: 100%;
+        text-align: center;
+    }
+}
+    
+
+
